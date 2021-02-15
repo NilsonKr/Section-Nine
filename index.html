@@ -15,11 +15,11 @@
     <title>Section Nine</title>
 </head>
 <body>
-    <section class="banner">
+    <section class="banner" id="hero">
         <header class="header">
             <span class="header-logo logo">SECTOR</span>
-            <img  class="burguer-menu" src="./assets/icons/burguerMenu.png" alt="Burguer Menu">
-            <ul class="menu">
+            <img id="burguerMenu" class="burguer-menu" src="./assets/icons/burguerMenu.png" alt="Burguer Menu">
+            <ul class="menu" id="menu">
                 <li class="item"><a href="#">Skates</a></li>
                 <li class="item"><a href="#">Wheels</a></li>
                 <li class="item"><a href="#">Components</a></li>
@@ -32,18 +32,18 @@
             </div>
             <h1 class="hero-phrase">If you are looking to write your name on the street, then you want a Sector Nine Skate</h1>
             <div class="hero-slider">
-                <p>Start</p>
                 <ul class="slider-sections">
-                    <li class="sections">01</li>
-                    <li class="sections">02</li>
-                    <li class="sections">03</li>
+                    <li class="sections"><a class="aSec" href="#hero">Start</a></li>
+                    <li class="sections"><a class="aSec" href="#section1">01</a></li>
+                    <li class="sections"><a class="aSec" href="#section2">02</a></li>
+                    <li class="sections"><a class="aSec" href="#section3">03</a></li>
                 </ul>
             </div>
         </section>
     </section>
     <main class="main">
         <section class="items-container">
-            <div class="item-contains contains1">
+            <div class="item-contains contains1" id="section1">
                 <div class="item-title">
                     <span>01</span>
                     <h2>CRUISER</h2>
@@ -56,7 +56,7 @@
                     <img src="./assets/images/content1.jpg" alt="Skate Image">
                 </figure>
             </div>
-            <div class="item-contains contains2">
+            <div class="item-contains contains2" id="section2">
                 <div class="item-title">
                     <span>02</span>
                     <h2>CARVING</h2>
@@ -69,7 +69,7 @@
                     <img src="./assets/images/content2.jpg" alt="Skate Image">
                 </figure>
             </div>
-            <div class="item-contains contains3">
+            <div class="item-contains contains3" id="section3">
                 <div class="item-title">
                     <span>03</span>
                     <h2>DOWNHILL</h2>
@@ -106,5 +106,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>

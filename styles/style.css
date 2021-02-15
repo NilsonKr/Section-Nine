@@ -13,6 +13,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     font-family: var(--main-font);
     /* font-size: 62.5%; */
 }
@@ -26,9 +27,9 @@ html{
 .banner::after{
     content: ' ';
     position: absolute;
+    height: 600px;
     right: 0;
     left: 0;
-    top: 0;
     bottom: 0;
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 40%, #0B1D26 99%);
 
@@ -64,6 +65,7 @@ html{
     z-index: 1;
 }
 .menuActive{
+    transition: 1s;
     position: fixed;
     display: flex;
     flex-flow: column;
@@ -121,13 +123,19 @@ html{
 }
 .hero-slider{
     border-right: 1px solid var(--black);
-    padding-right: 10px;
     justify-self: end;
     text-align: right;
 }
 .sections{
     margin: 5px 0;
     list-style: none;
+}
+.sections a{
+    color: var(--black);
+    text-decoration: none;
+}
+.aSec{
+    padding-right: 10px;
 }
 .main{
     padding-top: 50px;
