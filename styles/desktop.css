@@ -1,0 +1,44 @@
+.header{
+    flex-flow: row;
+    justify-content: space-between;
+}
+.menu{
+    position:static;
+}
+.menu .item {
+    margin: 0 10px;
+    display: inline-block;
+}
+.burguer-menu{
+    display: none;
+}
+.hero-phrase{
+    font-size: 2.7rem;
+}
+.item-contains{
+    grid-template-areas: "title img"
+                         "description img"
+                         "readMore img";
+}
+.item-contains span{
+    top: -140%;
+}
+.item-contains .item-title::before{
+    top: -20%;
+}
+.contains2{
+    align-self: flex-end;
+}
+
+
+@media screen and (min-width: 1024px){
+    .item-contains span{
+        top: -120%;
+    }
+    .item-contains .item-title::before{
+        top: -10%;
+    }
+    .item-description{
+        font-size: 1.2rem;
+    }
+}
